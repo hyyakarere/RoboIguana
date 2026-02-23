@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>CoordinateSharp</id>
+    <version>2.20.1.1</version>
+    <title>CoordinateSharp</title>
+    <authors>Signature Group, LLC</authors>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="file">License.txt</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>128x128.png</icon>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/Tronald/CoordinateSharp</projectUrl>
+    <description>CoordinateSharp is a high powered, lightweight .NET library that can convert geographical coordinates, perform distance logic, and calculate location based sun, moon, and magnetic information with minimal code.</description>
+    <releaseNotes>-Adds ability to estimate time of day from sun azimuth.
+-Adds "out of bounds" check to UTM initialization, allowing users to detect over projection.
+-Deprecates 'AstrologicalSigns' class and replaces with new 'AlmanacMoonName' class.
+-Various documentation fixes.</releaseNotes>
+    <copyright>Copyright 2023</copyright>
+    <tags>Conversion Latitude Longitude Coordinates Geography Sun Moon Solar Lunar Time MGRS UTM EPSG:3857 ECEF GEOREF Web Mercator</tags>
+    <repository url="https://github.com/Tronald/CoordinateSharp" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.0" />
+      <group targetFramework=".NETStandard1.3">
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="System.Reflection.TypeExtensions" version="4.5.0" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.Serialization.Formatters" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.Serialization.Primitives" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard1.4">
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="System.Reflection.TypeExtensions" version="4.5.0" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.Serialization.Formatters" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.Serialization.Primitives" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net5.0" />
+      <group targetFramework="net6.0" />
+      <group targetFramework="net7.0" />
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="System.Reflection.TypeExtensions" version="4.5.0" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.Serialization.Formatters" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.Serialization.Primitives" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="System.Reflection.TypeExtensions" version="4.7.0" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.Serialization.Formatters" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.Serialization.Primitives" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Microsoft.CSharp" targetFramework=".NETFramework4.0" />
+      <frameworkAssembly assemblyName="System.Core" targetFramework=".NETFramework4.0" />
+      <frameworkAssembly assemblyName="System" targetFramework=".NETFramework4.0" />
+    </frameworkAssemblies>
+  </metadata>
+</package>
