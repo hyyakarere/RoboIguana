@@ -111,6 +111,9 @@ crashlytics-build.properties
 .idea
 *.idea
 
+# Ignore experiment data
+*.csv
+*.csv.meta
 
 *.suo
 *.user
